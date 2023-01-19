@@ -1,0 +1,88 @@
+@import './partials/reset';
+@import './partials/variabili';
+@import './partials/header';
+@import './partials/sidebar';
+@import './partials/button';
+@import './partials/footer';
+
+body {
+    font-family: Kanit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column;;
+    }
+
+}
+
+
+// funzione per replicare classi della Section
+
+@for $i from 1 to 4 {
+.pagina-#{$i} {
+    display: flex;
+    align-items: center;
+    padding: 2% 3%;
+}
+}
+
+aside img {
+    border-radius: 100px;
+    width: 350px;
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
+.button {
+    @include button ($primary-color, $secondary-color)
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}
+ .homePage img {
+    width: 50%;
+ }
+
+ @media screen and (max-width: 768px) {
+    .homePage img:first-child {
+        display: none;
+    }
+
+    .homePage img {
+        width: 100%;
+    }
+ }
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    border-radius: 100px;
+    border: solid 1px black;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    box-shadow: 10px 10px 10px 10px gray;
+
+    @media screen and (max-width: 768px) {
+        margin: 10%;
+    }
+}

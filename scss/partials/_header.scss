@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: $bg-header;
+    @media screen and (max-width:768px) {
+        justify-content: space-around;
+    }
+}
+
+header img {
+    width: 5%;
+
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and (max-width:768px) {
+        display: none;        
+    }
+}
+
+.cerca {
+    border-radius: 30px;
+    height: 2em;
+    text-align: center;
+    margin-right: 2em;
+
+}

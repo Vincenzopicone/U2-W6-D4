@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    background-color: $bg-footer;
+    color: $text-footer;
+}

@@ -1,0 +1,43 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: center;
+    list-style: none;
+    padding: 0%;
+    background: rgb(255,160,122);
+    background: linear-gradient(173deg, rgba(255,160,122,1) 0%, rgba(0,0,0,1) 76%);;
+    height: 100%;
+    margin: 0;
+    li{
+        padding: 1em;
+        margin: 1em 0.5em 1.5em  0.5em;
+        border-radius: 30px;
+        background-color: azure;
+        font-size: 0.9em;
+        text-align: center;
+        width: 70%;
+        @media screen and (max-width:768px){
+            width: 25%;            
+        }
+
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: $secondary-color;
+        }
+
+    }
+    a{
+    text-decoration: none;
+    color: $primary-color;
+    }
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+
+}
