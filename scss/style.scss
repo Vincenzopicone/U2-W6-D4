@@ -47,7 +47,7 @@ section {
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -55,14 +55,10 @@ section {
     }
 }
  .homePage img {
-    width: 50%;
+    width: 40%;
  }
 
  @media screen and (max-width: 768px) {
-    .homePage img:first-child {
-        display: none;
-    }
-
     .homePage img {
         width: 100%;
     }
@@ -82,7 +78,7 @@ article {
     text-align: center;
     box-shadow: 10px 10px 10px 10px gray;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         margin: 10%;
     }
 }
